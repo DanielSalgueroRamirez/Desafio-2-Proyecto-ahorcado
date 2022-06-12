@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego del ahorcado</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="logo "><img src="Logo.png"></h1>
+  </header>
+
+  <h2 class="titulo">JUEGO DEL AHORCADO</h2>
+
+  <div class="caja" id="caja-botones">
+    <h3 class="titulo-perdiste" id="titulo-perdiste">PERDISTE!!</h3>
+    <input class="boton" type="button" name="Iniciar juego" id="boton" value="Reiniciar juego" onclick="location.href='ahorcado.html'">
+    <input class="boton" type="button" name="Agregar palabra" id="boton" value="Salir" onclick="location.href='menu.html'">
+
+  </div>
+
+  <div class="caja" id="caja-botones2">
+    <h4 class="titulo-ganaste">GANASTE!!</h4>
+    <input class="boton" type="button" name="Iniciar juego" id="boton" value="Reiniciar juego" onclick="location.href='ahorcado.html'">
+    <input class="boton" type="button" name="Agregar palabra" id="boton" value="Salir" onclick="location.href='menu.html'">
+
+  </div>
+
+
+  <main class="main"></main>
+
+  <img id="imagen" src="0.png" class="ahorcado"/>
+
+  <div id="div-aparece-ahorcado" class="canvas">
+    <canvas id="horca" height="960px" width="1200px"></canvas>
+  </div>
+
+  </main>
+
+<!-- <footer>
+    <img src="Logo.png">
+    <p class="copyright">&copy Copyright - 2022</p>
+  </footer> -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
